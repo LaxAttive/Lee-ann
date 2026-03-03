@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lee & Ann Restaurant – Prince Rupert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --primary: #e63946;
+      --secondary: #f1faee;
+      --dark: #1d3557;
+      --light: #f8f9fa;
+      --gray: #adb5bd;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: var(--secondary);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--dark) 0%, #457b9d 100%);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    .menu-section h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+      color: var(--dark);
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .menu-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .menu-card:hover {
+      transform: translateY(-4px);
+    }
+    .menu-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .menu-content {
+      padding: 1rem 1.2rem 1.2rem 1.2rem;
+    }
+    .menu-card h3 {
+      margin: 0 0 0.5rem 0;
+      color: var(--primary);
+    }
+    .menu-card p {
+      margin: 0 0 0.6rem 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .price {
+      font-weight: bold;
+      color: var(--dark);
+    }
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+      margin-top: 0.4rem;
+    }
+    .btn:hover {
+      background: #c1121f;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #f1faee;
+      color: #555;
+      border-top: 1px solid #ddd;
+      margin-top: 3rem;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lee & Ann Restaurant</h1>
+    <p>Prince Rupert, BC | Pho • Stir‑Fried Noodles • Burgers • Vietnamese Comfort Food</p>
+  </header>
+
+  <div class="container">
+
+    <section class="menu-section">
+      <h2>Our Menu</h2>
+      <p>View our featured dishes below. For the full menu, please ask in‑restaurant or check our online partners.</p>
+
+      <div class="menu-grid">
+
+        <!-- Pho Card -->
+        <div class="menu-card">
+          <img src="pho.jpg" alt="Pho Noodle Soup" class="menu-img" />
+          <div class="menu-content">
+            <h3>Pho & Noodle Soup</h3>
+            <p>Rare beef, brisket, and beef balls in rich, house‑made broth.</p>
+            <p class="price">From ~$14.99</p>
+            <a href="#contact" class="btn">Order In‑Store</a>
+          </div>
+        </div>
+
+        <!-- Stir‑Fried Noodles Card -->
+        <div class="menu-card">
+          <img src="noodles.jpg" alt="Stir‑Fried Noodles" class="menu-img" />
+          <div class="menu-content">
+            <h3>Stir‑Fried Noodles</h3>
+            <p>Beef, chicken, or prawns wok‑tossed with fresh egg or rice noodles.</p>
+            <p class="price">From ~$12.99</p>
+            <a href="#contact" class="btn">Order In‑Store</a>
+          </div>
+        </div>
+
+        <!-- Appetizers Card -->
+        <div class="menu-card">
+          <img src="springrolls.jpg" alt="Vietnamese Appetizers" class="menu-img" />
+          <div class="menu-content">
+            <h3>Vietnamese Appetizers</h3>
+            <p>Spring rolls, salad rolls, wontons, chicken skewers, and combo plates.</p>
+            <p class="price">From ~$6.50</p>
+            <a href="#contact" class="btn">Order In‑Store</a>
+          </div>
+        </div>
+
+        <!-- Burgers Card -->
+        <div class="menu-card">
+          <img src="burger.jpg" alt="Bacon Cheeseburger" class="menu-img" />
+          <div class="menu-content">
+            <h3>Burgers & Sandwiches</h3>
+            <p>Bacon cheeseburger, chicken burger, chicken fingers, and nuggets.</p>
+            <p class="price">From ~$10.99</p>
+            <a href="https://www.ubereats.com/ca/store/lee-&-ann-restaurant/Gtl7rlaPX4yMZB85B87qIQ" class="btn" target="_blank">Order via Uber Eats</a>
+          </div>
+        </div>
+
+        <!-- Sides Card -->
+        <div class="menu-card">
+          <img src="fries.jpg" alt="Fries and Onion Rings" class="menu-img" />
+          <div class="menu-content">
+            <h3>Sides & Fries</h3>
+            <p>Crispy fries, onion rings, and shareable side combos.</p>
+            <p class="price">From ~$4.99</p>
+            <a href="#contact" class="btn">Ask Staff</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Order via Spyce & Uber Eats</h2>
+      <p>
+        You can order Lee & Ann Restaurant for delivery or pickup using the local
+        <strong>SPYCE Delivery</strong> app and via <strong>Uber Eats</strong>,
+        serving Prince Rupert and surrounding areas. [web:3][web:14][web:24]
+      </p>
+      <p>
+        Download SPYCE on the App Store or Google Play, or use the Uber app to search for
+        <strong>Lee & Ann Restaurant – Prince Rupert</strong>, then place your order online.
+      </p>
+      <a href="https://www.spyce.ca" class="btn" target="_blank">Visit SPYCE.ca</a>
+      <a href="https://www.ubereats.com/ca/store/lee-&-ann-restaurant/Gtl7rlaPX4yMZB85B87qIQ" class="btn" style="background: #fdbb2d; margin-left: 0.6rem;" target="_blank">Order via Uber Eats</a>
+    </section>
+
+    <section id="contact" class="menu-section">
+      <h2>Contact & Location</h2>
+      <p>
+        <strong>Lee & Ann Restaurant</strong><br>
+        636 3rd Ave W, Prince Rupert, BC V8J 1M2 [web:4][web:5]
+      </p>
+      <p>
+        Phone: (250) 627‑1924
+      </p>
+      <p>
+        Hours: Open daily roughly 10:00 a.m.–8:00 p.m. (check app or call ahead). [web:3][web:5]
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Lee & Ann Restaurant – Prince Rupert, BC</p>
+    <p>Menu and prices may change. Please confirm in‑restaurant or via delivery apps.</p>
+  </footer>
+
+</body>
+</html>
